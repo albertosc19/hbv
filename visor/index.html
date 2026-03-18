@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visor de Autobuses</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h1>Visor de Autobuses</h1>
+      <div class="card">
+        <h2>Autobús activo</h2>
+        <p><strong>Conductor:</strong> <span id="driverName">Juan Pérez</span></p>
+        <p><strong>Autobús:</strong> <span id="busPlate">1234-ABC</span></p>
+        <p><strong>Latitud:</strong> <span id="latValue">-</span></p>
+        <p><strong>Longitud:</strong> <span id="lngValue">-</span></p>
+        <p><strong>Hora:</strong> <span id="timeValue">-</span></p>
+        <p><strong>Estado:</strong> <span id="statusValue">Esperando datos</span></p>
+      </div>
+    </aside>
+    <main class="map-container">
+      <div id="map"></div>
+    </main>
+  </div>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

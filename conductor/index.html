@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio de Ruta</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Inicio de Ruta</h1>
+    <div class="form-group">
+      <label for="driverSelect">Conductor</label>
+      <select id="driverSelect">
+        <option value="">Selecciona un conductor</option>
+        <option value="Juan Pérez">Juan Pérez</option>
+        <option value="María López">María López</option>
+        <option value="Carlos García">Carlos García</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="busSelect">Autobús</label>
+      <select id="busSelect">
+        <option value="">Selecciona un autobús</option>
+        <option value="1234-ABC">1234-ABC</option>
+        <option value="5678-DEF">5678-DEF</option>
+        <option value="9012-GHI">9012-GHI</option>
+      </select>
+    </div>
+    <button id="startRouteBtn">Comenzar ruta</button>
+    <button id="stopRouteBtn" disabled>Detener ruta</button>
+    <div id="status" class="status">Esperando a iniciar ruta...</div>
+    <div id="routeInfo" class="info hidden">
+      <h2>Ruta activa</h2>
+      <p><strong>Conductor:</strong> <span id="selectedDriver">-</span></p>
+      <p><strong>Autobús:</strong> <span id="selectedBus">-</span></p>
+      <p><strong>Latitud:</strong> <span id="latitude">-</span></p>
+      <p><strong>Longitud:</strong> <span id="longitude">-</span></p>
+      <p><strong>Hora:</strong> <span id="timestamp">-</span></p>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
